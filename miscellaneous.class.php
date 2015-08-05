@@ -129,18 +129,20 @@ class Miscellaneous {
 		public function setPotencia($Base,$Exp) {
 			$this->Potencia = pow ( number $Base , number $exp );
 	}
-}	
-		/** Matheus Mendes e Matheus Augusto, conversão para binário
-		 */
-	function dec_bin($decimal)
-{
-	$binario = "";
-	while($decimal != 0)
-    {
-    	$resto = $decimal % 2;
-    	$decimal = floor($decimal / 2);
-    	$binario = $resto.$binario;
-    }
-    	return $binario;
+
+
+
+
+//Aloisio e Augusto numeros primos
+public function numeros primos ($numero)
+<?php
+//exemplo com numero 10
+$numero = 10;
+
+if (gmp_prob_prime($numero)) {
+	print 'É primo';
+} else {
+	print 'Não é primo';
 }
 
+?>
